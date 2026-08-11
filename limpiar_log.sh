@@ -1,0 +1,5 @@
+#!/bin/bash
+
+find /var/log -type f -name "*.log" -mtime +7 -exec rm -f {} \;
+
+echo "Logs con mas de 7 dias eliminados"
